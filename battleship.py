@@ -26,9 +26,9 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
+print ship_row
+print ship_col
 
-# Everything from here on should go in your for loop!
-# Be sure to indent four spaces!
 for turn in range(4):
     print "Turn ", turn+1
     guess_row = int(raw_input("Guess Row:"))
@@ -51,17 +51,8 @@ for turn in range(4):
         # Print (turn + 1) here!
         print_board(board)
         
-'''
+#To Add:
+#1. Make multiple battleships: you'll need to be careful because you need to make sure that you don’t place battleships on top of each other on the game board. You'll also want to make sure that you balance the size of the board with the number of ships so the game is still challenging.
+#2. Make battleships of different sizes: this is trickier than it sounds. All the parts of the battleship need to be vertically or horizontally touching and you’ll need to make sure you don’t accidentally place part of a ship off the side of the board.
+#3. Make your game a two-player game. Use functions to allow your game to have more features like rematches, statistics and more!
 
-To Add:
-
-
-1. Make multiple battleships: you'll need to be careful because you need to make sure that you don’t place battleships on top of each other on the game board. You'll also want to make sure that you balance the size of the board with the number of ships so the game is still challenging and fun to play.
-
-2. Make battleships of different sizes: this is trickier than it sounds. All the parts of the battleship need to be vertically or horizontally touching and you’ll need to make sure you don’t accidentally place part of a ship off the side of the board.
-
-3. Make your game a two-player game.
-
-Use functions to allow your game to have more features like rematches, statistics and more!
-
-'''
